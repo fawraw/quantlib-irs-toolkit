@@ -1,0 +1,30 @@
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual envs
+.venv/
+venv/
+env/
+
+# Build
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Tests / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+coverage.xml
+
+# IDE
+.vscode/
+.idea/
+.DS_Store
+
+# Local config / scratch
+.env
+*.local
+scratch/

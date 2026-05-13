@@ -1,0 +1,42 @@
+[build-system]
+requires      = ["hatchling>=1.18"]
+build-backend = "hatchling.build"
+
+[project]
+name            = "quantlib-irs-toolkit"
+version         = "0.1.0"
+description     = "Minimal QuantLib IRS curve bootstrapping for EM and frontier rates (PLN, HUF, CZK, ZAR)."
+readme          = "README.md"
+requires-python = ">=3.10"
+license         = { file = "LICENSE" }
+authors         = [{ name = "Farid Said", email = "58819127+fawraw@users.noreply.github.com" }]
+keywords        = ["quantlib", "interest-rate", "swap", "irs", "curve", "bootstrapping", "fintech", "pln", "huf", "czk", "zar"]
+classifiers     = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Financial and Insurance Industry",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Office/Business :: Financial",
+    "Topic :: Scientific/Engineering",
+]
+dependencies = [
+    "QuantLib>=1.30",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[project.urls]
+Homepage   = "https://github.com/fawraw/quantlib-irs-toolkit"
+Issues     = "https://github.com/fawraw/quantlib-irs-toolkit/issues"
+Source     = "https://github.com/fawraw/quantlib-irs-toolkit"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/quantlib_irs_toolkit"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths  = ["tests"]
