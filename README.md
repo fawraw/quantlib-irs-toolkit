@@ -1,9 +1,9 @@
 # quantlib-irs-toolkit
 
+[![PyPI version](https://img.shields.io/pypi/v/quantlib-irs-toolkit?label=PyPI)](https://pypi.org/project/quantlib-irs-toolkit/)
+[![Python versions](https://img.shields.io/pypi/pyversions/quantlib-irs-toolkit)](https://pypi.org/project/quantlib-irs-toolkit/)
 [![Tests](https://github.com/fawraw/quantlib-irs-toolkit/actions/workflows/test.yml/badge.svg)](https://github.com/fawraw/quantlib-irs-toolkit/actions/workflows/test.yml)
 [![License: MIT](https://img.shields.io/github/license/fawraw/quantlib-irs-toolkit)](LICENSE)
-[![Latest release](https://img.shields.io/github/v/release/fawraw/quantlib-irs-toolkit)](https://github.com/fawraw/quantlib-irs-toolkit/releases)
-![Python](https://img.shields.io/badge/python-3.10%2B-blue)
 
 Minimal, opinionated [QuantLib](https://www.quantlib.org/) helpers to bootstrap interest-rate swap curves from market par rates, with sensible conventions for the EM and frontier currencies most often missing from generic tutorials.
 
@@ -18,7 +18,7 @@ Adding a new currency is a single dict entry; see [Adding a currency](#adding-a-
 
 ## Install
 
-QuantLib's Python bindings are the only dependency.
+[Released on PyPI](https://pypi.org/project/quantlib-irs-toolkit/). QuantLib's Python bindings are the only runtime dependency.
 
 ```bash
 pip install quantlib-irs-toolkit
