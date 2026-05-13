@@ -1,5 +1,10 @@
 # quantlib-irs-toolkit
 
+[![Tests](https://github.com/fawraw/quantlib-irs-toolkit/actions/workflows/test.yml/badge.svg)](https://github.com/fawraw/quantlib-irs-toolkit/actions/workflows/test.yml)
+[![License: MIT](https://img.shields.io/github/license/fawraw/quantlib-irs-toolkit)](LICENSE)
+[![Latest release](https://img.shields.io/github/v/release/fawraw/quantlib-irs-toolkit)](https://github.com/fawraw/quantlib-irs-toolkit/releases)
+![Python](https://img.shields.io/badge/python-3.10%2B-blue)
+
 Minimal, opinionated [QuantLib](https://www.quantlib.org/) helpers to bootstrap interest-rate swap curves from market par rates, with sensible conventions for the EM and frontier currencies most often missing from generic tutorials.
 
 Currently supported out of the box:
